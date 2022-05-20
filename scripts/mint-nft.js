@@ -10,7 +10,7 @@ const nftContract = new web3.eth.Contract(contract.abi, contractAddress)
 
 
 const PUBLIC_KEY = "0x0c46a5Fe94c48D643923146168Ad7b28Cd4B05e5";
-const PRIVATE_KEY = "669431b99d1e201385277d08ba001229d766215b4f14d8a02e3d1d9538d007bd"
+const PRIVATE_KEY = process.env.API_URL;
 
 
 async function mintNFT(tokenURI) {
